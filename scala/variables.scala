@@ -1,5 +1,6 @@
-object Variables{
+object Variables
   var x =5
-  var y = "u4bi"
+  val y = "u4bi" /* const */
+
   def main(args: Array[String]) = println(x+" - "+y)
 }
