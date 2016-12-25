@@ -10,7 +10,10 @@ object TutorialApp extends JSApp {
   }
   
   def setupUI(): Unit = {
-    jQuery("#click-me-button").click(addClickedMessage _)
+    jQuery("""<button type="button">Click me!</button>""")
+   .click(addClickedMessage _)
+   .appendTo(jQuery("body"))
+
     jQuery("body").append("<p>Hello World</p>")
   }
 
