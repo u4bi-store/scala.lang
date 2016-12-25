@@ -5,5 +5,6 @@ object Functions{
   def main(args: Array[String]): Unit = {
     println("abc1")
     println("abc2")
+    println(mult("ab","cd"))
   }
 }
