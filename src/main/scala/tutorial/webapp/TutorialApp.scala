@@ -6,6 +6,13 @@ import org.scalajs.jquery.jQuery
 object TutorialApp extends JSApp {
   def main(): Unit = {
     println("u4bi")
-    jQuery("body").append("<p>[message]</p>")
+    jQuery(setupUI _)
   }
+  
+  def setupUI(): Unit = {
+    jQuery("#click-me-button").click(addClickedMessage _)
+    jQuery("body").append("<p>Hello World</p>")
+  }
+
+  
 }
