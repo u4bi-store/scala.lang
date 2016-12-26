@@ -1,5 +1,11 @@
 object Sequence{
 
+  def sumProduct(s: Seq[Int]): (Int, Int) = {
+    s.foldLeft((0, 1)) {
+      case ((sum, product), x ) => (sum + x, product * x)
+    }
+  }
+
   def main(args: Array[String]): Unit = {
     val seq = Seq(1, 2, 3, 4, 5)
    
@@ -24,6 +30,7 @@ object Sequence{
       println("seq : "+seq)
       println(seq++Seq(6, 7))
       println("seq : "+seq)
-    
+      
+      println(sumProduct(seq))
   }
 }
