@@ -7,7 +7,17 @@ object Control_Structures{
 
   var x = 0
   val p = Array("u4bi_a", "u4bi_b", "u4bi_c", "u4bi_d")
- 
+  
+  /* for function*/
+  def find(n: Int, s: Int): Unit = {
+    for{
+      i <- 0 until n
+      j <- 0 until s
+    }
+    println("i j: "+i+" "+j)
+
+  }
+
   def main(args: Array[String]): Unit = {
     println("res_a : "+res_a)
     println("res_b : "+res_b)
@@ -19,5 +29,7 @@ object Control_Structures{
     for(s<-p){
       println("word : "+s)
     }
+
+    find(1, 2)
   }
 }
