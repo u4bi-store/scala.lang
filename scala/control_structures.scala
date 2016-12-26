@@ -17,6 +17,16 @@ object Control_Structures{
     println("i j: "+i+" "+j)
 
   }
+  /* switch -> match */
+  val animal = "dog"
+  val isAnimal = animal match{
+    case "cat" | "Lion" | "Tiger" =>
+      "it's feline"
+    case "dog" | "wolf" =>
+      "it's canine"
+    case _ =>
+      "it's something else"
+  }
 
   def main(args: Array[String]): Unit = {
     println("res_a : "+res_a)
@@ -31,5 +41,7 @@ object Control_Structures{
     }
 
     find(1, 2)
+    println(isAnimal);
+
   }
 }
