@@ -16,11 +16,14 @@ object Sequence{
 //    println("init : "+seq.init)
 //    println("drop : "+seq.drop(2))
 //    println("dropRight : "+seq.dropRight(2))
-    println("count : "+seq.count(x => x < 3) )
-    println("groupBy : "+seq.groupBy(x => x % 2) )
-    println("sortBy : "+seq.sortBy(x=> x > 3) )
-    println("partition : "+seq.partition(x=> x > 3) )
-//    println("seq:+6"+seq:+6)
-//    println("seq++"+seq++)
+//    println("count : "+seq.count(x => x < 3) )
+//    println("groupBy : "+seq.groupBy(x => x % 2) )
+//    println("sortBy : "+seq.sortBy(x=> x > 3) )
+//    println("partition : "+seq.partition(x=> x > 3) )
+      println(seq:+6)
+      println("seq : "+seq)
+      println(seq++Seq(6, 7))
+      println("seq : "+seq)
+    
   }
 }
